@@ -1,0 +1,38 @@
+<html>
+	<head>
+	<body>
+		<input id="new" >
+		<button id="find">find</button>
+		<div id='addNew'></div>
+		<script>
+			 
+			 var run = document.getElementById('find');
+			var d=document.getElementById('addNew')	
+			run.onclick =	function newarray()
+				{
+					var anyarray= [5,8,3,2,1];
+					var num =  document.getElementById('new').value;
+			   		
+					for(var i=0;i<anyarray.length;i++){
+				   		if(anyarray[i]==num){
+							   d.innerText="pos is: " +(i+1);
+				  		 		break;
+						}
+		
+			  	 	}
+					if(i==anyarray.length){
+					d.innerText="not found";}
+					   
+				}
+			
+	
+			
+			
+			
+			
+		</script>
+	</body>
+	</head>
+</html>
+
+
